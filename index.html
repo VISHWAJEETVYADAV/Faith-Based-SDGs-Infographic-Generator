@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faith SDG Infographic Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Faith-Based SDG Infographic Generator</h1>
+
+    <div class="input-group">
+      <label for="faith">Faith</label>
+      <input type="text" id="faith" placeholder="e.g., Christianity, Islam, Hinduism">
+    </div>
+
+    <div class="input-group">
+      <label for="sdg">SDG Goal</label>
+      <input type="text" id="sdg" placeholder="e.g., No Poverty, Climate Action">
+    </div>
+
+    <div class="input-group">
+      <label for="description">Additional Description</label>
+      <textarea id="description" placeholder="Add extra details here"></textarea>
+    </div>
+
+    <button id="generateBtn">Generate Image</button>
+
+    <div class="result">
+      <h2>Generated Image</h2>
+      <div class="image-container">
+        <div id="loader" class="loader"></div>
+        <img id="resultImg" src="" alt="Your generated image will appear here">
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
